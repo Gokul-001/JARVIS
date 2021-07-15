@@ -117,6 +117,7 @@ if __name__=='__main__':
             print("****************")
             print("upload speed:{b} Mbps".format(b=st.upload()))
             print("****************")
+            
         elif "show best server" in command:
             st=Speedtest()
             best_server=st.get_best_server()
@@ -135,8 +136,7 @@ if __name__=='__main__':
             except Exception as e:
                 print(e)
                 speak('sorry! unable to send mail')
-    	
-    	
+                
         elif "exit"  in command:
             speak("goodbye! have a great day sir")
             exit()
